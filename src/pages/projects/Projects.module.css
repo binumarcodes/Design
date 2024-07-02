@@ -1,0 +1,218 @@
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 3rem 17rem;
+    background: #11071F;
+    position: relative;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.contents {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: row;
+}
+
+.head-text {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        font-family: 'Preahvihear', sans-serif;
+        width: 200px;
+        line-height: 40px;
+        overflow: hidden;
+}
+
+.title {
+    color: #7127BA;
+    font-size: 12px;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.heading {
+    font-size: 20px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.project-card {
+    width: 369px;
+    /* height: 165px; */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.project-desc {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.skill-btn {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background: #240f3ff8;
+    color: #7127BA;
+    font-family: 'Preahvihear', sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.project-img {
+    width: 300px;
+    margin: 0 10px;
+}
+
+/* .left {
+    position: relative;
+} */
+
+.gradient {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    width: 225px;
+    height: 350px;
+    z-index: 0;
+}
+
+.contents-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+
+  .project-img {
+    transition: .8s ease-in;
+    border-radius: 30px;
+  }
+
+  
+  .project-img:hover {
+    transform: rotateY(-15deg);
+  }
+
+  
+  .icon-click {
+    margin: 20px;
+    width: 19px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .container {
+        max-width: 100vw;
+        min-height: 100vh;
+        padding: 1rem;
+        background: #11071F;
+        position: relative;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    
+    .contents {
+        display: flex;
+        /* align-items: center;
+        /* justify-content: center; */
+        flex-direction: column; 
+        padding-bottom: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .contents:last-child {
+        border: none;
+    }
+    
+    .head-text {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            font-family: 'Preahvihear', sans-serif;
+            width: 200px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            overflow: hidden;
+    }
+    
+    .title {
+        color: #7127BA;
+        font-size: 12px;
+        font-family: 'Preahvihear', sans-serif;
+    }
+    
+    .heading {
+        font-size: 20px;
+        color: white;
+        font-family: 'Preahvihear', sans-serif;
+    }
+    
+    .project-card {
+        width: 90vw;
+        /* height: 165px; */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .project-desc {
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Preahvihear', sans-serif;
+    }
+
+    
+    .project-img {
+        width: 300px;
+    }
+    
+    /* .left {
+        position: relative;
+    } */
+    
+    .gradient {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        transform: translate(-50%, -50%);
+        width: 225px;
+        height: 350px;
+        z-index: 0;
+    }
+    
+    .contents-reverse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid gray;
+      }
+      
+      .icon-click {
+        margin: 20px;
+        width: 19px;
+      }
+  }

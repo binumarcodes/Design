@@ -1,0 +1,224 @@
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    background: #11071F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+.card {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px -5px silver;
+    /* box-shadow: 5px -5px -5px 5px silver; */
+    padding: 0 6rem;
+    margin: 30px 0;
+    background-image: linear-gradient(to bottom right, #190238, #070011, #190238);
+     /* Start and end points for the gradient */
+  background-size: 200% 200%; /* The size of the background image */
+  animation: light-sweep 2s infinite;
+    transition: 1.3s ease-in-out;
+}
+
+@keyframes light-sweep {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+
+
+.title {
+    color: silver;
+    font-size: 20px;
+    font-family: 'Preahvihear', sans-serif;
+    /* text-align: right; */
+    text-decoration: double;
+    margin-right: 10px;
+}
+
+.heading {
+    font-size: 30px;
+    color: silver;
+    font-family: 'Preahvihear', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 60px;
+}
+
+.sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.meImage {
+    width: 100px;
+    height: auto;
+  }
+
+.arrow-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    width: 130px;
+    align-self: center;
+    transform: rotate(310deg);
+    animation: bounce 4s linear infinite both;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px) rotate(330deg);
+    }
+    20% {
+        transform: translateY(10px) rotate(320deg)
+    }
+
+    40% {
+        transform: translateY(-10px) rotate(310deg);
+    }
+    60% {
+        transform: translateY(-10px) rotate(315deg);
+    }
+    80% {
+        transform: translateY(10px) rotate(320deg)
+    }
+
+    100% {
+        transform: translateY(-10px) rotate(330deg);
+    }
+
+}
+
+.card2 {
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(to top, #070011, #190238);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px -5px silver;
+    box-shadow: 5px -5px -5px 5px silver;
+    padding: 0 2rem;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card2:hover .web-img {
+    transform: scale(1.1);
+}
+
+
+.card3:hover .web-img {
+    transform: scale(1.1);
+}
+
+.web-img {
+    width: 90%;
+    border-radius: 8px;
+    margin-top: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.title2 {
+    color: silver;
+    font-size: 20px;
+    font-family: 'Preahvihear', sans-serif;
+    margin-top: 20px;
+}
+
+.title3 {
+    color: silver;
+    font-size: 13px;
+    font-family: 'Preahvihear', sans-serif;
+    margin-bottom: 10px;
+}
+
+.skill-btn {
+    width: 120px;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background: #7127BA;
+    color: #240f3ff8;
+    font-family: 'Preahvihear', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 90vw;
+        height: auto;
+        padding-bottom: 20px;
+        padding: 0 1rem;
+        font-display: r;
+    }
+    .card2 {
+        width: 90vw;
+        height: auto;
+        padding: 0 1rem;
+    }
+    
+    .web-img {
+        transform: scale(1.1);
+    }
+    .card3 {
+        width: 90vw;
+        height: auto;
+    }
+
+    .title {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    
+    .heading {
+        font-size: 15px;
+        font-family: 'Preahvihear', sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        line-height: 30px;
+    }
+
+    .sub-title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .arrow-container {
+        margin-top: 20px;
+    }
+
+    .arrow {
+        width: 100px;
+    }
+
+    .title2 {
+        color: silver;
+        font-size: 18px;
+        font-family: 'Preahvihear', sans-serif;
+        margin-top: 20px;
+    }
+}

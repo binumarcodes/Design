@@ -1,0 +1,133 @@
+.container {
+    background: #1a0b2ef8;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+li {
+    margin: 0 50px;
+    list-style-type: none;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.link-line {
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+li:hover .link-line {
+    width: 100%;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Preahvihear', sans-serif;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+.logo {
+    width: 35px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        background: #1A0B2E;
+        width: 350px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 10px;
+        position: fixed;
+        top: 2.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        z-index: 100;
+        box-sizing: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    
+    }
+    
+    li {
+        margin: 0 15px;
+        list-style-type: none;
+        position: relative;
+        overflow: hidden;
+    
+    }
+    
+    .link-line {
+        width: 0%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        transition: 0.3s ease;
+    }
+    
+    li:hover .link-line {
+        width: 100%;
+    }
+    
+    li:hover {
+        transform: scale(1.2);
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: 'Tahoma', 'Courier New', Courier, monospace;
+        transition: .5s ease;
+    }
+
+    .logo {
+        width: 20px;
+    }
+}

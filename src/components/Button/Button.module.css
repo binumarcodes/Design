@@ -1,0 +1,19 @@
+.connect-btn {
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background: #7127BA;
+    color: #fff;
+    font-family: 'Preahvihear', sans-serif;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px #3d1268;
+    cursor: pointer;
+}
+
+.connect-btn:hover {
+    transform: scale(1.04);
+}

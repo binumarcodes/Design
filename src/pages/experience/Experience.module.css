@@ -1,0 +1,95 @@
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 5rem 10rem;
+    background: #11071F;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    overflow-x: hidden;
+}
+.heading {
+    font-size: 30px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.gradient {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 425px;
+    height: 450px;
+    background: url("../src/assets/Gradient.png") center center no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.cards {
+    /* width: 100%; */
+    position: absolute;
+    z-index: 1;
+}
+
+/* .card-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.card {
+    width: 370px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        max-width: 100vw;
+        min-height: 100vh;
+        padding: 1rem;
+        overflow-x: hidden;
+
+    }
+    .heading {
+        font-size: 15px;
+    }
+
+    
+    .cards-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    
+    .cards {
+        /* width: 100%; */
+        /* position: absolute;
+        z-index: 1; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    /* .card-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    
+    .card {
+        width: 370px;
+    }
+}
